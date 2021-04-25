@@ -5,9 +5,10 @@ import org.junit.Test;
 
 public class CashbackHackServiceTest {
 
+    CashbackHackService cashbackHackService = new CashbackHackService();
+
     @Test
     public void IfWeNotPay() {
-        CashbackHackService cashbackHackService = new CashbackHackService();
 
         int amount = 0;
 
@@ -20,7 +21,6 @@ public class CashbackHackServiceTest {
     @Test
     // судя по подсказке он должен упасть
     public void IfWeOverPay() {
-        CashbackHackService cashbackHackService = new CashbackHackService();
 
         int amount = 11000;
 
@@ -32,7 +32,6 @@ public class CashbackHackServiceTest {
 
     @Test
     public void IfWeHalfPay() {
-        CashbackHackService cashbackHackService = new CashbackHackService();
 
         int amount = 500;
 
@@ -44,7 +43,6 @@ public class CashbackHackServiceTest {
 
     @Test
     public void IfWeAnyPay() {
-        CashbackHackService cashbackHackService = new CashbackHackService();
 
         int amount = 340;
 
